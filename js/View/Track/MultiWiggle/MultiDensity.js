@@ -92,7 +92,9 @@ function (
                             height: (kheight - 1) + 'px',
                             width: thisB.config.showLabels ? lw : '10px',
                             font: thisB.config.labelFont,
-                            backgroundColor: elt.color
+                            backgroundColor: elt.color,
+                            opacity: 0.2,
+                            'z-index':999
                         },
                         innerHTML: thisB.config.showLabels ? elt.name : ''
                     }, thisB.div);
